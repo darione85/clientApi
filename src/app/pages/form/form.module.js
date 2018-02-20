@@ -47,6 +47,17 @@
           sidebarMeta: {
             order: 200,
           },
-        });
+        })
+        .state('form.jsonditor',
+          {
+              url: '/jsoneditor',
+              templateUrl: 'app/pages/jsoneditor/editor/jsoneditor.html',
+              controller: 'JsonEditorCtrl',
+              controllerAs: 'vm',
+              title: 'jsoneditor',
+              sidebarMeta: {
+                  order: 300,
+              },
+          });
   }
 })();
